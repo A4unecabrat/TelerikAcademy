@@ -13,16 +13,8 @@ namespace Sub_string_in_text
         {
             string substring = Console.ReadLine().ToLower();
             string input = Console.ReadLine().ToLower();
-            int occurrences = 0;
-            int startingIndex = 0;
-
-            while ((startingIndex = input.IndexOf(substring, startingIndex)) >= 0)
-            {
-                ++occurrences;
-                startingIndex += substring.Length;
-            }
-
-            Console.WriteLine(occurrences);
+            int count = new Regex(substring).Matches(input).Count;
+            Console.WriteLine(count);
         }
     }
 }
