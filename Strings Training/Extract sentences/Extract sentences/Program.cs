@@ -12,17 +12,18 @@ namespace Extract_sentences
         static void Main(string[] args)
         {
             string word = Console.ReadLine();
-            string[] input = Console.ReadLine().Split('.','?','!');
+            string[] input = Console.ReadLine().Split('.');
             StringBuilder result = new StringBuilder();
-            foreach (var sentence in input)
+            string pattern = @"(^|\W|[0-9_])" + Regex.Escape(word) + @"($|\W|[0-9_])";
+            //MatchCollection matches = Regex.Matches(input, pattern);
+            foreach (string item in input)
             {
-                if(new Regex(Regex.Escape(word)).Matches(sentence).Count > 0)
+                if(Regex.Match(item, pattern).Success)
                 {
-                    result.Append(sentence + '.');
+                    result.Append(item + '.');
                 }
             }
-            Console.WriteLine(result);
-        
+            Console.WriteLine(result.ToString().Trim());
         }
     }
 }

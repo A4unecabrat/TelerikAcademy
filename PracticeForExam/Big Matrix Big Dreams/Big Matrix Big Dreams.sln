@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Big Matrix Big Dreams", "Big Matrix Big Dreams\Big Matrix Big Dreams.csproj", "{8700112B-F8F6-4D6C-B817-E0D126ED8468}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8700112B-F8F6-4D6C-B817-E0D126ED8468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8700112B-F8F6-4D6C-B817-E0D126ED8468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8700112B-F8F6-4D6C-B817-E0D126ED8468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8700112B-F8F6-4D6C-B817-E0D126ED8468}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E0AA922-E595-41FE-8FD6-8F79E0F454D8}
+	EndGlobalSection
+EndGlobal
